@@ -1,5 +1,5 @@
 //To create a class, define its members: properties, a constructor, accessors, and methods.
-interface Vehicle {
+export interface Vehicle {
   make: string;
   color: string;
   doors: number;
@@ -7,7 +7,7 @@ interface Vehicle {
   brake(): string;
   turn(direction: "left" | "right"): string;
 }
-class Car implements Vehicle {
+export class Car implements Vehicle {
   // Properties
   private static numberOfCars: number = 0; // New static property
   private _make: string;
